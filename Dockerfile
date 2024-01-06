@@ -15,14 +15,15 @@ WORKDIR /app
 #RUN npm config set registry https://mirrors.cloud.tencent.com/npm/
 
 # 拷贝包管理文件
-COPY ./next.config.js /app
 COPY ./package.json /app
 COPY ./pnpm-lock.yaml /app
+RUN npm install --omit=dev
+
+COPY ./next.config.js /app
 COPY ./.next/ /app/.next
 
 #COPY . /app
 
-RUN npm install
 RUN ls -a
 
 #CMD 运行以下命令
