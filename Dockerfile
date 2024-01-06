@@ -21,6 +21,7 @@ RUN npm install --omit=dev
 
 COPY ./next.config.js /app
 COPY ./.next/ /app/.next
+COPY ./public /app/public
 
 #COPY . /app
 
