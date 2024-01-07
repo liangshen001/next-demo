@@ -1,7 +1,7 @@
 version: '3'
 services:
   next-demo:
-    image: next-demo
+    image: next-demo:latest
     container_name: next-demo
     ports:
       - "3000:3000"
