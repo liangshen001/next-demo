@@ -1,0 +1,20 @@
+version: "3"
+services:
+  openwrt:
+    image: openwrt/rootfs:latest
+    networks:
+      macnet:
+        ipv4_address: 192.168.2.33
+    restart: always
+    privileged: true
+    command: "/sbin/init"
+
+networks:
+  macnet:
+    driver: macvlan
+    driver_opts:
+      parent: <your_physical_network_interface>
+    ipam:
+      config:
+        - subnet: 192.168.2.0/24
+          gateway: 192.168.2.1
