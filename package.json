@@ -9,16 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@mui/joy": "^5.0.0-beta.24",
     "@prisma/client": "^5.8.1",
     "next": "^14",
-    "prisma": "^5.8.1",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "prisma": "^5.8.1",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/joy": "^5.0.0-beta.24",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
