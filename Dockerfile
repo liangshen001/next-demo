@@ -16,7 +16,7 @@ WORKDIR /app
 
 # 拷贝包管理文件
 COPY ./package.json /app
-COPY ./pnpm-lock.yaml /app
+COPY ./package-lock.json /app
 RUN npm install --omit=dev
 
 COPY ./next.config.js /app
